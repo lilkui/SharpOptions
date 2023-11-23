@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<Platforms>x64</Platforms>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\..\.editorconfig" Link=".editorconfig" />
+		<AdditionalFiles Include="..\..\stylecop.json" Link="stylecop.json" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="CommunityToolkit.Diagnostics" Version="8.2.2" />
+		<PackageReference Include="CommunityToolkit.HighPerformance" Version="8.2.2" />
+		<PackageReference Include="CSparse" Version="3.8.1" />
+		<PackageReference Include="Google.Protobuf" Version="3.25.1" />
+		<PackageReference Include="intelmkl.redist.win-x64" Version="2024.0.0.49657" />
+		<PackageReference Include="intelopenmp.redist.win" Version="2024.0.0.49840" />
+		<PackageReference Include="inteltbb.redist.win" Version="2021.11.0.49514" />
+		<PackageReference Include="MathNet.Numerics" Version="5.0.0" />
+		<PackageReference Include="SharpZipLib" Version="1.4.2" />
+		<PackageReference Include="SkiaSharp" Version="2.88.6" />
+		<PackageReference Include="StyleCop.Analyzers.Unstable" Version="1.2.0.507">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="TorchSharp-cuda-windows" Version="0.101.2" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\CSparse.Interop\CSparse.Interop.csproj" />
+	</ItemGroup>
+
+</Project>

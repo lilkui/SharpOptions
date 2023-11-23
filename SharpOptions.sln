@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharpOptions", "src\SharpOptions\SharpOptions.csproj", "{2A4C48AA-F56F-4867-877F-997D4290124C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSparse.Interop", "src\CSparse.Interop\CSparse.Interop.csproj", "{FB8D4E5E-2D48-4E0D-986F-6250121FABBA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A4C48AA-F56F-4867-877F-997D4290124C}.Debug|x64.ActiveCfg = Debug|x64
+		{2A4C48AA-F56F-4867-877F-997D4290124C}.Debug|x64.Build.0 = Debug|x64
+		{2A4C48AA-F56F-4867-877F-997D4290124C}.Release|x64.ActiveCfg = Release|x64
+		{2A4C48AA-F56F-4867-877F-997D4290124C}.Release|x64.Build.0 = Release|x64
+		{FB8D4E5E-2D48-4E0D-986F-6250121FABBA}.Debug|x64.ActiveCfg = Debug|x64
+		{FB8D4E5E-2D48-4E0D-986F-6250121FABBA}.Debug|x64.Build.0 = Debug|x64
+		{FB8D4E5E-2D48-4E0D-986F-6250121FABBA}.Release|x64.ActiveCfg = Release|x64
+		{FB8D4E5E-2D48-4E0D-986F-6250121FABBA}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {883067C6-7803-435B-82CA-4C00679BF92F}
+	EndGlobalSection
+EndGlobal
