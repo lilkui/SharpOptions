@@ -3,11 +3,16 @@ using SharpOptions.Utils;
 
 namespace SharpOptions.PricingEngines;
 
-public abstract class PricingEngine
+public abstract class PricingEngine(ITradingCalendar calendar, DateTime valuationDate)
 {
-    public required ITradingCalendar Calendar { get; set; }
+    protected PricingEngine()
+        : this(SseTradingCalendar.Instance, DateTime.Today)
+    {
+    }
 
-    public required DateTime ValuationDate { get; set; }
+    public ITradingCalendar Calendar { get; set; } = calendar;
+
+    public DateTime ValuationDate { get; set; } = valuationDate;
 
     public virtual double ValueAt(double s)
     {
